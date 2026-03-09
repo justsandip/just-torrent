@@ -33,7 +33,7 @@ void main() {
         'download',
         file.path,
         '-o',
-        'downloads'
+        'downloads',
       ]);
 
       expect(exitCode, ExitCode.success.code);
