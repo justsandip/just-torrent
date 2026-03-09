@@ -41,7 +41,7 @@ class DownloadCommand extends Command<int> {
 
     if (args.rest.isEmpty) {
       _logger.err('A .torrent file must be provided.');
-      return 1;
+      return ExitCode.usage.code;
     }
 
     final torrentFile = args.rest.first;
